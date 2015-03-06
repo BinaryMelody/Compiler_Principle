@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>5120309626-report</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>CS215 Compiler Principles Project Report</h1>
+<hr />
+<h4>Name: Zuoming Zhang</h4>
+<h4>Student ID: 5120309626</h4>
+<h2>Introduction</h2>
+<p><strong>SMALLC</strong> is a simplified <em>C-liked</em> programming language containing only the core part of C language. In this project, I have designed and implemented a simplified compiler, which can translate <strong>SMALLC</strong> source codes to <strong>MIPS</strong> assembly codes. These assembly codes can run on the <strong>SPIM</strong> simulator. The project was done in a Linux Environment called <em>Ubuntu Kylin 14.04</em>.</p>
+<p>The procedure of the project was divided in to 5 parts:</p>
+<ul>
+<li>Lexical analyzer</li>
+<li>Syntax analyzer</li>
+<li>Semantic analyzer &amp; Intermediate representation generation</li>
+<li>Optimization</li>
+<li>Target <strong>MIPS</strong> code generation</li>
+</ul>
+<hr />
+<h2>Lexical Analyzer</h2>
+<p>A lexical analyser has been implemented in this part. It reads the source codes of <strong>SMALLC</strong> and separates them into tokens. The work is done using <em>FLEX</em> and the related file is <code>&quot;smallc.l&quot;</code></p>
+<h3>DEC HEX &amp; OCT Numbers</h3>
+<p>To deal with int numbers that are not traditionally decimals, there is a quite simple way to avoid typing the translation code on your own, which requires you to <code>#include&lt;stdlib.h&gt;</code> first:</p>
+<pre><code>0[0-7]*             { /*OCT*/ yylval.mI_Int = strtoul(yytext, NULL, 0); return INT; }
+[1-9][0-9]*         { /*DEC*/ yylval.mI_Int = strtoul(yytext, NULL, 0); return INT; }
+0[Xx][0-9a-fA-F]+   { /*HEX*/ yylval.mI_Int = strtoul(yytext, NULL, 0); return INT; }
+</code></pre>
+
+<h3>Read and Write</h3>
+<p>Since most of the details of <strong>TOKENS</strong> and <strong>Operators</strong> are given to us in the project requirement, I will not talk about them in the report. Instead, I will show you how to deal with <strong>read</strong> and <strong>write</strong> tokens. They are also very simple:</p>
+<pre><code>read    { return READ; }
+write   { return WRITE; }
+</code></pre>
+
+<h3>Comments</h3>
+<p>There are two kinds of comments in <em>C</em> language.</p>
+<p>The first kind is to comment the rest of the line using <code>\\</code> token. It was implemented by using the following method:</p>
+<pre><code>&quot;//&quot;(.)*    { /* Comments, do nothing */ }
+</code></pre>
+
+<p>The second kind is to comment the materials between <code>/*</code> and <code>*/</code> token pairs, which made use of the <em>state transition method</em>:</p>
+<pre><code>%x comment
+
+%%
+&quot;/*&quot;            BEGIN(comment);
+&lt;comment&gt;{
+[^*\n]*         /* eat anything that's not a '*' */
+&quot;*&quot;+[^*/\n]*    /* eat up '*'s not followed by '/'s */
+\n
+&quot;*&quot;+&quot;/&quot;         BEGIN(INITIAL);
+}
+</code></pre>
+
+<h3>Line number</h3>
+<p>There are various to mark the line nubmers. In my implementation, an <code>updatePosition()</code> method is called on every token:</p>
+<pre><code>void updatePosition();
+#define YY_USER_ACTION updatePosition();
+int linecount = 1;
+%%
+[\n]    { ++linecount; }
+%%
+void updatePosition(){
+    yyloc.first_line = linecount;
+}
+</code></pre>
+
+<p>Once you want to get the line number of a particular token $ in the <em>YACC</em> file, you can simply use <code>@$.first_line</code> to obtain the data.</p>
+<hr />
+<h2>Syntax Analyzer</h2>
+<p>In this step, I performed the syntax analysis using <em>YACC</em> and the file name is <code>&quot;smallc.y&quot;</code>.</p>
+<h3>Precedence of <em>IF</em> and <em>IF ELSE</em> Statement</h3>
+<p>There exists a conflict in the implementation of &quot;<em>IF LP EXP RP STMT</em>&quot; and &quot;<em>IF LP EXP RP STMT ELSE STMT</em>&quot;, and the former one should have a lower precedence than the latter one. Here is the implementation:</p>
+<pre><code>%nonassoc LOWER_THAN_ELSE
+%nonassoc ELSE
+%%
+STMT:
+ | IF LP EXP RP STMT %prec LOWER_THAN_ELSE
+ | IF LP EXP RP STMT ELSE STMT
+ ;
+</code></pre>
+
+<p>Pay attention that the order of the first two lines should not be exchanged.</p>
+<h3>Read and Write</h3>
+<p>In my project, <em>read</em> and <em>write</em> are implemented in the syntax of <em>STMT</em>, which means that you can never cite them in an <em>EXP</em>. The implementation is as follows:</p>
+<pre><code>STMT:
+ | READ LP EXP RP SEMI
+ | WRITE LP EXP RP SEMI
+ ;
+</code></pre>
+
+<h3>Error Message</h3>
+<p>The error message is done together with generating the parse tree. Once an error occurs during the procedure, the parse process will shutdown and report the just-found mistake:</p>
+<pre><code>void yyerror(const char *s){
+    fprintf(stderr, &quot;[line %d]: %s %s\n&quot;, yylloc.first_line, s, yytext);
+}
+</code></pre>
+
+<p>It will show you the line number of the error and its error text.</p>
+<hr />
+<h2>Semantic Analyzer &amp; IR Generation</h2>
+<p>In this section, I have implemented the Semantic Analyzer &amp; IR Generation together with the formation of the parse tree.</p>
+<h3>Parse Tree Generation</h3>
+<p>Actually, the <em>Parse Tree Generation</em> part is done in the above section. Since it is closely related to <em>Semantic Analyzing</em> as well as <em>IR Generation</em>, I will talk about it in this section.</p>
+<p>The Parse Tree Generation is based on the construction of <code>struct Node{}</code>. Different nodes of the parse tree will use only a specific part of the <em>Node</em> members. Though it seems very space-consuming, most of the members of <em>Node</em> are pointers and it won't cost too much extra space. The implementation with this method is rather simpler than using the C++ class method. The codes are implemented in <code>include &quot;Info.h&quot;</code> Take the generation of a <em>Binary Plus Operation Expression</em> as an example:</p>
+<pre><code>EXPS: EXPS PLUS EXPS;   {
+                        $$ = new Node(@$.first_line, Expression); // Pass in the line number and node type is expression.
+                        $$-&gt;initial_Expression_BinaryOp($1, OP_PLUS, $3); // Set the attributes of the Node.
+                        }
+
+void initial_Expression_BinaryOp(Node* left, OperatorType OP, Node* right){
+    mb_LValueExpression = false;    // This is not a LValue Expression, which means that it cannot be assigned.
+    me_ExpressionType = Exp_BinaryOp;   // The type of this expression is a binary operator.
+    left_Expression = left; // left_Expression is the left node
+    right_Expression = right;   // right_Expression is the right node 
+    me_OP = OP; // Operator type, in this case it is PLUS.
+}
+</code></pre>
+
+<p>The different variables of <em>Node</em> and there usage are shown in the table below:</p>
+<table>
+	<tr>
+		<td><B>Contained By</B></td>
+		<td><B>Variable Name</B></td>
+		<td><B>Usage</B></td>
+	</tr>
+	<tr>
+		<td><B>All</B></td>
+		<td>int mi_LineNum</td>
+		<td>Line Number, used by error message</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>enum NodeType me_NodeType</td>
+		<td>Type of the node, e.g. Expression, Statement, Declaration</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>ms_Name</td>
+		<td>Different uses in different variables, e.g. function name</td>
+	</tr>
+	<tr>
+		<td><B>Expression</B></td>
+		<td>enum ExpressionType me_ExpressionType</td>
+		<td>The type of expression, e.g. binary_operator</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>bool mb_LValueExpression</td>
+		<td>Whether it is an L-Value Expression</td>
+	</tr>
+	<tr>
+		<td>Expression:Int</td>
+		<td>int mi_IntExpression_Val</td>
+		<td>The value of constant int expression</td>
+	</tr>
+	<tr>
+		<td>Expression:Array</td>
+		<td>vector<Node*>* mv_ArraySubscriptList</td>
+		<td>The subscript expression list of an array expression</td>
+	</tr>
+	<tr>
+		<td>Expression:FunctionCall</td>
+		<td>vector<Node*>* mv_ArgumentList</td>
+		<td>The argument list of a function call</td>
+	</tr>
+	<tr>
+		<td>Expression:Struct</td>
+		<td>string ms_MemberName</td>
+		<td>The name of the member of a struct type</td>
+	</tr>
+	<tr>
+		<td>Expression:Operator</td>
+		<td>Node* left_Expression</td>
+		<td>Left part of assign and binary operator expression</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Node* right_Expression</td>
+		<td>Right part of unary assign, assign and binary op exp</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>enum OperatorType me_OP</td>
+		<td>The operator type of the expression</td>
+	</tr>
+	<tr>
+		<td><B>Declaration</B></td>
+		<td>enum DeclarationType me_DeclarationType</td>
+		<td>The declaration type of variable(s)</td>
+	</tr>
+	<tr>
+		<td>Declaration:Array/Variable</td>
+		<td>vector<Variable_ArrayDeclarationInfo*>*</td>
+		<td>The information list of declare an array or a variable</td>
+	</tr>
+	<tr>
+		<td>Declaration:Struct</td>
+		<td>string ms_StructName</td>
+		<td>The struct type of a struct variable</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>vector<string>* mv_StructMembers</td>
+		<td>The member names of a struct type</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>vector<string>* mv_StructDeclarations</td>
+		<td>The declared variables using this struct type</td>
+	</tr>
+	<tr>
+		<td><B>Statement</B></td>
+		<td>enum StatementType me_StatementType</td>
+		<td>The type of statement</td>
+	</tr>
+	<tr>
+		<td>Statement:Return</td>
+		<td>Node* return_Expression</td>
+		<td>Return expression</td>
+	</tr>
+	<tr>
+		<td>Statement:If then (else)</td>
+		<td>Node* if_Expression</td>
+		<td>If condition Expression</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Node* then_Statement</td>
+		<td>Then Statement(block)</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Node* else_Statement</td>
+		<td>Else Statement(block)</td>
+	</tr>
+	<tr>
+		<td>Statement:For</td>
+		<td>Node* init_Expression</td>
+		<td>For init exp</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Node* cond_Expression</td>
+		<td>For condition exp</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Node* update_Expression</td>
+		<td>For increment exp</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Node* for_Statement</td>
+		<td>For loop statement</td>
+	</tr>
+	<tr>
+		<td>Statement:StatementBlock</td>
+		<td>vector<Node*>* declarations_in_block</td>
+		<td>Declaration list in a block</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>vector<Node*>* statements_in_block</td>
+		<td>Statement list in a block</td>
+	</tr>
+	<tr>
+		<td>Statement:Read & Write</td>
+		<td>Node* io_Expression</td>
+		<td>Used by Read or Write</td>
+	</tr>
+	<tr>
+		<td><B>Function</B></td>
+		<td>vector<stirng>* parameters</td>
+		<td>Parameter list of a function</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Node* function_Body</td>
+		<td>Statementblock of a function</td>
+	</tr>
+	<tr>
+		<td><B>Program</B></td>
+		<td>vector<Node*>* extern_declarations</td>
+		<td>EXTDECS of a program</td>
+	</tr>
+</table>
+<h3>Semantic Analysis</h3>
+<p>Soon after the implementation of the parse tree, the semantic analysis and syntactic checking are performed to check whether the program is the correct program. It is done in <code>GenIntermediate.cpp</code>.</p>
+<p>The followings will show my implementation:</p>
+<h4>In Project Requirement</h4>
+<p>I have implemented all the requirements of semantic checking in the project requirement.</p>
+<h5>Declaration</h5>
+<p>Variables and functions should be declared before usage:</p>
+<pre><code>Definition* tmp = getDefinition(cur-&gt;ms_Name, table, linenum);
+if(tmp==NULL) {
+    cout &lt;&lt;&quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : No variable is called '&quot; &lt;&lt; cur-&gt;ms_Name &lt;&lt; &quot;'.&quot; &lt;&lt; endl;
+    return R_ZERO;
+}
+</code></pre>
+
+<p>Variables and functions should not be re-declared:</p>
+<pre><code>if(table-&gt;count(info-&gt;ms_Name)!=0){
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : '&quot; &lt;&lt; info-&gt;ms_Name &lt;&lt; &quot;' has already been declared in this scope.&quot; &lt;&lt; endl;
+    return false;
+}
+</code></pre>
+
+<h5>Reserved words</h5>
+<p>Reserved words can not be used as identifiers. </p>
+<p>This is implemented in syntax checking in the Syntax Analyzer and will not be shown here.</p>
+<h5>&quot;main()&quot; entrance</h5>
+<p>Program must contain a function int main() to be the entrance.</p>
+<pre><code>if(table-&gt;count(&quot;main&quot;)==0 || table-&gt;getItem(&quot;main&quot;)-&gt;definition_type != type_function){
+    cout &lt;&lt; &quot;Error: The program does not have an entrance 'main'.&quot; &lt;&lt; endl;
+    flag = false;
+}
+</code></pre>
+
+<h5>Function call parameters</h5>
+<p>The number and type of variable(s) passed should match the definition of the function.</p>
+<pre><code>if(cur-&gt;mv_ArgumentList-&gt;size() != tmp-&gt;parameter_number){
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : Function call does not have the same number of arguments as the function itself.&quot; &lt;&lt; endl;
+    return false;
+}
+</code></pre>
+
+<h5>[] and . operator</h5>
+<p>Use [] operator to a non-array variable is not allowed.</p>
+<pre><code>if(tmp-&gt;definition_type!=type_local_array &amp;&amp; tmp-&gt;definition_type!=type_global_array){
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : '&quot; &lt;&lt; cur-&gt;ms_Name &lt;&lt; &quot;' is not an array type.&quot; &lt;&lt; endl;
+    return R_ZERO;
+}
+</code></pre>
+
+<p>The . operator can only be used to a struct variable.</p>
+<pre><code>if(tmp-&gt;definition_type!=type_local_struct &amp;&amp; tmp-&gt;definition_type!=type_global_struct){
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : '&quot; &lt;&lt; cur-&gt;ms_Name &lt;&lt; &quot;' is not a struct type.&quot; &lt;&lt; endl;
+    return R_ZERO;
+}
+</code></pre>
+
+<h5>Break and Continue</h5>
+<p>Break and continue can only be used in a for-loop</p>
+<pre><code>if(currentLoopBreakLabel == &quot;&quot;){
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : Nothing to break out of.&quot; &lt;&lt; endl;
+    return false;
+}
+if(currentLoopContinueLabel == &quot;&quot;){
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : No loop to continue.&quot; &lt;&lt; endl;
+    return false;
+}
+</code></pre>
+
+<h5>Right and Left Value</h5>
+<p>Right-value can not be assigned by any value or expression.</p>
+<pre><code>if(cur-&gt;left_Expression-&gt;mb_LValueExpression == false){
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : Attempting to assign a non L-value.&quot; &lt;&lt; endl;
+    return false;
+}
+</code></pre>
+
+<h5>Operands Type checking</h5>
+<p>The condition of if statement should be an expression with int type.</p>
+<p>The condition of for should be an expression with int type or NULL.</p>
+<p>Only expression with type int can be involved in arithmetic.</p>
+<p>Since in my application, operators and assigns can only be done with int values, so the if and for condition are sure not to work with other types of variables. e.g. A struct type is called<em>asdf</em>, and when you put it in a condition, the compiler try to get it address, and treat it as avariable. It will find aa in the symbol table, but the definition type of <em>asdf</em> is <em>struct</em> instead of <em>variable</em>. It will send out an error message telling you that you cannot get the address of the variable.</p>
+<h4>Beyond Project Requirement</h4>
+<p>The following will show my implementation of semantic checking beyond course requirement.</p>
+<h5>Array Declaration</h5>
+<p>In my project, you can declare an array with as large dimension as you like. And you can never declare an array with non-positive size.</p>
+<pre><code>if(array_num&lt;=0){
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : An array is initialized with non-positive size.&quot; &lt;&lt; endl;
+    return false;
+}
+</code></pre>
+
+<p>You can never initialize an array with initial list number more than the array size.</p>
+<pre><code>if(array_num &lt; info-&gt;mv_InitList-&gt;size()) {
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : The initialize list is too large for '&quot; &lt;&lt; info-&gt;ms_Name &lt;&lt; &quot;'.&quot; &lt;&lt; endl;
+    return false;
+}
+</code></pre>
+
+<p>It will also check whether the initial subscript list of an array are constants.</p>
+<pre><code>if((*(info-&gt;mv_InitList))[i]-&gt;me_ExpressionType != Exp_Int){
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : The initialize value should be a constant expression.&quot; &lt;&lt; endl;
+    return false;
+}
+</code></pre>
+
+<h5>Struct Declaration</h5>
+<p>Struct should not be declared with no members or name at the same time:</p>
+<pre><code>if(structMembers-&gt;size()==0 || structDeclarations-&gt;size()==0){
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : Struct Declaration with no members or name.&quot; &lt;&lt; endl;
+    return false;
+}
+</code></pre>
+
+<p>Which means that you can not use something like <code>struct ;</code> in your program, which is meaningless.</p>
+<p>You can predeclare a struct type like: <code>struct typestruct  ab, cd;</code> and implement it in later code: <code>struct typestruct { int aa; int bb; }</code>. After your implementation, <em>ab</em> and <em>cd</em> will both have members <em>aa</em> and <em>bb</em>.</p>
+<p>You can also define a struct type like: <code>struct typestruct { int aa; int bb;}</code> and use it in later: <code>struct typestruct ab, cd;</code>. It will have the same effect as the above paragraph.</p>
+<p>If you don't assign a name for struct type, it will assign a randam name for the type: <code>struct { int aa; int bb;} ab, cd;</code>. In this case, <em>ab</em> and <em>cd</em> will have a randam struct type name like <em>#a</em>. Although <em>#</em> can not be recognized as an identifier in <em>C</em> language, it will be OK since I use <em>string</em> to implement this.</p>
+<h5>Return Object</h5>
+<p>Return object can never be empty, since all of the functions are int type.</p>
+<pre><code>if(cur-&gt;return_Expression==NULL) {
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : Return object can't be empty.&quot; &lt;&lt; endl;
+    return false;
+}
+</code></pre>
+
+<h5>Struct Member Check</h5>
+<p>The right part of operator <em>'.'</em> must be a member in the struct type, otherwise it will send out an error message:</p>
+<pre><code>if(tmp-&gt;table-&gt;struct_map[tmp-&gt;struct_type]-&gt;Struct_Offsites.count(cur-&gt;ms_MemberName)==0){
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : '&quot; &lt;&lt; cur-&gt;ms_Name &lt;&lt; &quot;' does not have member '&quot; &lt;&lt; cur-&gt;ms_MemberName &lt;&lt; &quot;'.&quot; &lt;&lt; endl;
+    return R_ZERO;
+}
+</code></pre>
+
+<h5>Array Usage</h5>
+<p>The dimension of the array usage must fit the declaration:</p>
+<pre><code>if(cur-&gt;mv_ArraySubscriptList-&gt;size() != tmp-&gt;array_subscript_num){
+    cout &lt;&lt; &quot;Error: Line &quot; &lt;&lt; linenum &lt;&lt; &quot; : '&quot; &lt;&lt; cur-&gt;ms_Name &lt;&lt; &quot;' dimension not fit.&quot; &lt;&lt; endl;
+    return R_ZERO;
+}
+</code></pre>
+
+<h3>Symbol Table</h3>
+<p>In this part, I implemented a Symbol Table of the program. Each Symbol table has a parent Symbol Table pointer but has no son Symbol Table pointers. Once a Symbol Table is used, it will be poped from the current symbol table. The parent node pointer makes it possible to find the variable in a parent scope. In each Symbol Table, there are mainly two parts. One saves the names and there related information of the variables and functions(in the root Symbol Table). The other is used to save the information of a struct type, like the members it has and relative offsets in the stack of each member.</p>
+<h3>IR Generation</h3>
+<p>In this part, I implemented the intermediate code generation. The IR code are a bit like the final <strong>MIPS</strong> code for the sake of simplicity of implementation. (Actually, I think the IR code is useless in this project since it is much more easy to directly generate <strong>MIPS</strong> without generating IR first.) The IR codes are implemented in <em>C++ class</em> and in <code>#include &quot;Intermediate.h&quot;</code>.The following is my IR and it is in three-address code format (<strong>Note:</strong> <em>Tempo</em> here means a temporary variable that randomly choosen.):</p>
+<table>
+	<tr>
+		<td>
+			<B>Name</B>
+		</td>
+		<td>
+			<B>Operand 1</B>
+		</td>
+		<td>
+			<B>Operand 2</B> 
+		</td>
+		<td>
+			<B>Destination</B>
+		</td>
+		<td>
+			<B>Description</B>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			InterLabel
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			string name
+		</td>
+		<td>
+			a label
+		</td>
+	</tr>
+	<tr>
+		<td>
+			InterJumpLabel
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			string name
+		</td>
+		<td>
+			jump label
+		</td>
+	</tr>
+	<tr>
+		<td>
+			InterReturn
+		</td>
+		<td>
+			Tempo ret
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			return value in function
+		</td>
+	</tr>
+	<tr>
+		<td>
+			IfGoto
+		</td>
+		<td>
+			Tempo cond
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			string target
+		</td>
+		<td>
+			jump if true
+		</td>
+	</tr>
+	<tr>
+		<td>
+			IfFalseGoto
+		</td>
+		<td>
+			Tempo cond
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			string target
+		</td>
+		<td>
+			jump if false
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Move
+		</td>
+		<td>
+			Tempo from
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			Tempo to
+		</td>
+		<td>
+			mov two operands
+		</td>
+	</tr>
+	<tr>
+		<td>
+			InterIntGlobal
+		</td>
+		<td>
+			Not three address code format!
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			init information for global int
+		</td>
+	</tr>
+	<tr>
+		<td>
+			InterArrayGlobal
+		</td>
+		<td>
+			Not three address code format!
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			init information for global array
+		</td>
+	</tr>
+	<tr>
+		<td>
+			InterStructGlobal
+		</td>
+		<td>
+			Not three address code format!
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			init information for global struct
+		</td>
+	</tr>
+	<tr>
+		<td>
+			InterIntLocal
+		</td>
+		<td>
+			Not three address code format!
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			init information for local int
+		</td>
+	</tr>
+	<tr>
+		<td>
+			InterArrayLocal
+		</td>
+		<td>
+			Not three address code format!
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			init information for local array
+		</td>
+	</tr>
+	<tr>
+		<td>
+			InterStructLocal
+		</td>
+		<td>
+			Not three address code format!
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			init information for local struct
+		</td>
+	</tr>
+	<tr>
+		<td>
+			InterBinOp(string OP)
+		</td>
+		<td>
+			Tempo left
+		</td>
+		<td>
+			Tempo right
+		</td>
+		<td>
+			Tempo dest
+		</td>
+		<td>
+			binary operation
+		</td>
+	</tr>
+	<tr>
+		<td>
+			InterUnaryOp(string OP)
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			Tempo right
+		</td>
+		<td>
+			Tempo dest
+		</td>
+		<td>
+			unary operation
+		</td>
+	</tr>
+	<tr>
+		<td>
+			MoveImmediate
+		</td>
+		<td>
+			int value
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			Tempo dest
+		</td>
+		<td>
+			like li in MIPS
+		</td>
+	</tr>
+	<tr>
+		<td>
+			MoveVariable
+		</td>
+		<td>
+			string name
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			Tempo dest
+		</td>
+		<td>
+			move variable address to dest
+		</td>
+	</tr>
+	<tr>
+		<td>
+			MoveArray
+		</td>
+		<td>
+			string name 
+		</td>
+		<td>
+			Tempo bias
+		</td>
+		<td>
+			Tempo dest
+		</td>
+		<td>
+			move array address to dest
+		</td>
+	</tr>
+	<tr>
+		<td>
+			MoveStruct
+		</td>
+		<td>
+			string name 
+		</td>
+		<td>
+			string member
+		</td>
+		<td>
+			Tempo dest
+		</td>
+		<td>
+			move struct address to dest
+		</td>
+	</tr>
+	<tr>
+		<td>
+			MoveToVariable
+		</td>
+		<td>
+			Tempo from
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			string name
+		</td>
+		<td>
+			move content to variable address
+		</td>
+	</tr>
+	<tr>
+		<td>
+			MoveToArray
+		</td>
+		<td>
+			Tempo from
+		</td>
+		<td>
+			Tempo bias
+		</td>
+		<td>
+			string name
+		</td>
+		<td>
+			move content to array address
+		</td>
+	</tr>
+	<tr>
+		<td>
+			MoveToStruct
+		</td>
+		<td>
+			Tempo from
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			string name/member
+		</td>
+		<td>
+			move content to struct address
+		</td>
+	</tr>
+	<tr>
+		<td>
+			CallFucntion
+		</td>
+		<td>
+			string name
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			call function, other infomations are stored and not be shown
+		</td>
+	</tr>
+	<tr>
+		<td>
+			CallRead
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			call read function
+		</td>
+	</tr>
+	<tr>
+		<td>
+			CallWrite
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			call write function
+		</td>
+	</tr>
+</table>
+<hr />
+<h2>Optimization(Optional)</h2>
+<h3>Compute Integer when Compiling</h3>
+<p>In this project, my compiler will automatically compute the integers arithmetics in the program when compiling. For example:</p>
+<pre><code>a = b + (6 + 3) * 2;
+</code></pre>
+
+<p>It will translate it into <strong>MIPS</strong> like:</p>
+<pre><code>li $t0, 18
+la $t1, b
+lw $t1, 0($t1)
+add $t1, $t1, $t0
+la $t0, a
+sw $t1, 0($t1)
+</code></pre>
+
+<p>So <strong>MIPS</strong> simulator can do much fewer instructions since the integer arithmetics have already been optimized.</p>
+<p>This optimization is very important since you can initial an array like the following:</p>
+<pre><code>int arr[4] = {1+3, 3*2, -4+8, 5%3};
+</code></pre>
+
+<p>It will have the same effect as:</p>
+<pre><code>int arr[4] = {4, 6, 4, 2};
+</code></pre>
+
+<hr />
+<h2>Machine-code Generation</h2>
+<h3>Instruction Selection</h3>
+<p>Most of the students did the instruction selection part almost the same way, so did I. The work is together done in <code>GenIntermediate.cpp</code> since it is rather simple. And I will show you something special in my design.</p>
+<p>To get a value from or store value to the variable (or array member, struct member) address, a special function called getXXXXXAddress is called:</p>
+<pre><code>Register getStructMemberAddress(Node* cur, SymbolTable* table, int linenum){
+    if(tmp-&gt;definition_type==type_local_struct){
+        Register address = getFreeRegister();
+        int offset = tmp-&gt;stackOffsite;
+        offset += table-&gt;struct_map[tmp-&gt;struct_type]-&gt;Struct_Offsites[cur-&gt;ms_MemberName];
+        instructions-&gt;push_back(new BinOpImmediate(&quot;addi&quot;, address, R_SP, offset));
+        return address;
+    }
+}
+</code></pre>
+
+<p>The above one is an example for struct type variable. You can get the address of the variable and save it in a register to get the variable value.</p>
+<pre><code>lw $t0, 0($t0)
+</code></pre>
+
+<p><em>$t0</em> here is the generated address and soon be replaced by the obtained value.</p>
+<h3>Stack Allocation</h3>
+<p>The stack allocation of my design is a bit different from the given reference book, and it looks like the following:</p>
+<table>
+	<tr>
+		<td>
+			<B>Materials Stored</B>
+		</td>
+		<td>
+			<B>Address</B>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			.........The stack of former function call        
+		</td>
+		<td>
+			previous $sp points to
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Parameter 3
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Parameter 2
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Parameter 1
+		</td>
+		<td>
+			$a0 points to
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Local Variable 3
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Local Variable 2
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Local Variable 1
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			$a0
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			$ra
+		</td>
+		<td>
+			$sp points to 
+		</td>
+	</tr>
+</table>
+<p>You can see clearly in my implementation that I have saved <strong>all</strong> of the variables in the stack and use <em>$a0</em> to be the pointer to show the start of the function parameters. </p>
+<h3>Register Allocation</h3>
+<p>My implementation is very register saving, and it's algorithm is rather simple. It uses the three following functions:</p>
+<pre><code>void reclaimRegisters(){
+    remainingRegisters = { R_T0, R_T1, R_T2, R_T3, R_T4, R_T5, R_T6, R_T7, R_T8, R_T9};
+    registersInUse = {};
+}
+void returnRegister(Register r){
+    remainingRegisters.insert(r);
+    registersInUse.erase(r);
+}
+Register getFreeRegister(){
+    Register ret = *(remainingRegisters.begin());
+    remainingRegisters.erase(ret);
+    registersInUse.insert(ret);
+    return ret;
+}
+</code></pre>
+
+<p>The usage of the above three are to initial registers, return a register and ask for a new register. Most of the allocation work are done during the procedure of generating code. For example, in the following expression:</p>
+<pre><code>EXP = EXP1 + EXP2;
+</code></pre>
+
+<p>Assumed that <em>EXP1</em> and <em>EXP2</em> have already been computed and assigned the registers <em>$t0</em> and <em>$t1</em>. It will then assign another register <em>$t2</em> (if it is not being used now) and after doing the computation <code>add $t2, $t0, $t1</code>, it will do the following:</p>
+<pre><code>returnRegister(EXP1);
+returnRegister(EXP2);
+</code></pre>
+
+<p>Here we use <em>EXP1</em> and <em>EXP2</em> to represent the registers they are using.</p>
+<p>The reason why I asked for another new register to compute <em>EXP</em> instead of either register of <em>EXP1</em> or <em>EXP2</em> is because I intended to do perform optimization on <em>Common subexpression elimination</em> but due to time limit, failed to realize it.</p>
+<p>In the above realization, my compiler will work well except that you use a test of an expression with a very large <strong>Ershov Number</strong>.</p>
+<h3>Input and Output</h3>
+<p>The input and output are rather simple to implement and I have mentioned their lexical and syntax analyzation in former parts. The codes are as followings:</p>
+<p>For read:</p>
+<pre><code>instructions-&gt;push_back(new BinOp(&quot;add&quot;, R_A1, R_V0, R_ZERO));
+instructions-&gt;push_back(new LoadImmediate(R_V0, 5));
+instructions-&gt;push_back(new Syscall());
+instructions-&gt;push_back(new StoreWord(R_V0, address, 0));
+instructions-&gt;push_back(new BinOp(&quot;add&quot;, R_V0, R_A1, R_ZERO));
+</code></pre>
+
+<p>Which save <em>$v0</em> to <em>$a1</em> first and then do the syscall of <em>$v0 = 5</em>, and then recover <em>$v0</em> from <em>$a1</em>.</p>
+<p>For write:</p>
+<pre><code>instructions-&gt;push_back(new BinOp(&quot;add&quot;, R_A1, R_V0, R_ZERO));
+instructions-&gt;push_back(new BinOp(&quot;add&quot;, R_A2, R_A0, R_ZERO));
+instructions-&gt;push_back(new LoadImmediate(R_V0, 1));
+instructions-&gt;push_back(new BinOp(&quot;add&quot;, R_A0, tmp, R_ZERO));
+instructions-&gt;push_back(new Syscall());
+instructions-&gt;push_back(new BinOp(&quot;add&quot;, R_V0, R_A1, R_ZERO));
+instructions-&gt;push_back(new BinOp(&quot;add&quot;, R_A0, R_A2, R_ZERO));
+</code></pre>
+
+<p>Which save <em>$v0</em> and <em>$a0</em> to <em>$a1</em> and <em>$a2</em> first and then do the syscall of <em>$v0 = 1 $a0 = WriteInteger</em>, and then recover <em>$v0</em> and <em>$a0</em>.</p>
+<hr />
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
